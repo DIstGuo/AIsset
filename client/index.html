@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AIsset - AI Co-Pilot Design Asset Generation</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <nav>
+          <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+            <div class="container-fluid px-4">
+              <a class="navbar-brand" href="#"><img id="logo" src="assets/logo.png" alt=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav grid gap-4">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Tutorial</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Community</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Licensing</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa-solid fa-bars"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+      </header>
+      <div id="prompt-container" class="functional-container container-fluid px-4">
+        <form class="prompt-writer p-3">
+          <ul class="nav nav-pills d-inline-flex w-auto" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="icon-tab" data-bs-toggle="tab" data-bs-target="#icon" type="button" role="tab" aria-controls="icon" aria-selected="true">Icon</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="illustration-tab" data-bs-toggle="tab" data-bs-target="#illustration" type="button" role="tab" aria-controls="illustration" aria-selected="false">Illustration</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="image-tab" data-bs-toggle="tab" data-bs-target="#image" type="button" role="tab" aria-controls="image" aria-selected="false">Image</button>
+            </li>
+          </ul>
+          <div class="tab-content">
+            <div class="tab-pane fade show active" id="icon" role="tabpanel" aria-labelledby="icon-tab">
+              <div class="row">
+                <div class="col-md-10">
+                  <div class="form-floating">
+                    <textarea class="form-control border border-0" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                    <label for="floatingTextarea2">Describe what you want to generate for icon...</label>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="d-grid">
+                    <button type="submit" class="btn">Generate</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="illustration" role="tabpanel" aria-labelledby="illustration-tab">
+              <div class="row">
+                <div class="col-md-10">
+                  <div class="form-floating">
+                    <textarea class="form-control border border-0" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                    <label for="floatingTextarea2">Describe what you want to generate for illustration...</label>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="d-grid">
+                    <button type="submit" class="btn">Generate</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="image" role="tabpanel" aria-labelledby="image-tab">
+              <div class="row">
+                <div class="col-md-10">
+                  <div class="form-floating">
+                    <textarea class="form-control border border-0" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                    <label for="floatingTextarea2">Describe what you want to generate for image...</label>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="d-grid">
+                    <button type="submit" class="btn">Generate</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div id="asset-container" class="container-fluid asset-container">
+        <div class="alert d-flex align-items-center w-100" role="alert">
+          <div class="d-flex flex-row grid gap-4">
+            <span><i class="fa-solid fa-lightbulb"></i></span>
+            <div>
+              <p class="heading-6 heading">Use descriptive language</p>
+              <p class="body-2 body">AIsset works best when you provide clear and specific descriptions of the asset you want it to generate.</p>
+            </div>
+          </div>
+        </div>
+        <div class="alert d-flex align-items-center w-100" role="alert">
+          <div class="d-flex flex-row grid gap-4">
+            <span><i class="fa-solid fa-lightbulb"></i></span>
+            <div>
+              <p class="heading-6 heading">Experiment with different styles</p>
+              <p class="body-2 body">AIsset can generate assets in a variety of styles, so don't be afraid to experiment with different options to find the one that works best for your project.</p>
+            </div>
+          </div>
+        </div>
+        <div class="alert d-flex align-items-center w-100" role="alert">
+          <div class="d-flex flex-row grid gap-4">
+            <span><i class="fa-solid fa-lightbulb"></i></span>
+            <div>
+              <p class="heading-6 heading">Refine your results</p>
+              <p class="body-2 body">Use “Configure” to refine and adjust the settings and parameters as needed.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    <script src="/main.js"></script>
+  </body>
+</html>

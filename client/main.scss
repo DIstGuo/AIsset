@@ -1,0 +1,148 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+// Include any default variable overrides here (though functions won't be available)
+
+@import "./node_modules/bootstrap/scss/bootstrap";
+// Then add additional custom code here
+
+// importing core styling file
+@import "./node_modules/@fortawesome/fontawesome-free/css/all.min.css";
+
+$neutral-0: #ffffff;
+$neutral-50: #F0F0F1;
+$neutral-300: #A6A7AD;
+$neutral-500: #6B6C77;
+$neutral-600: #56565F;
+$neutral-900: #151618;
+$primary-10: #F8F8FD;
+$primary-300: #979BF4;
+$primary-500: #5258EC;
+$primary-700: #323696;
+$primary-850: #1A1D55;
+$radius-3: 24px;
+$radius-4: 32px;
+$radius-8: 64px;
+
+#logo {
+    height: 48px;
+    width: auto;
+}
+
+header {
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+}
+
+.nav-pills {
+    background-color: $neutral-50;
+    border-radius: $radius-8;
+}
+
+.nav-pills .nav-link {
+    background-color: transparent;
+    color: #56565F;
+    border: 1px solid transparent;
+    border-radius: $radius-8;
+  }
+  
+  .nav-pills .nav-link.active, .nav-pills .nav-link:focus {
+    background-color: #151618;
+    color: #fff;
+    border: 1px solid #151618;
+  }
+  
+  .nav-pills .nav-link:hover {
+    background-color: #fff;
+    color: #151618;
+  }
+
+.functional-container {
+    background-image: url(assets/shattered-island.gif);
+    position: absolute;
+    top:0px;
+    width: 100vw;
+    height: 322px;
+    padding-top: 200px;
+    z-index: 50;
+}
+
+.prompt-writer {
+    border: 1px solid #E1e2e4;
+    background-color: white;
+    border-radius: $radius-4;
+}
+
+.asset-container {
+    position: absolute;
+    top: 322px;
+    padding: 160px 64px;
+}
+
+.alert {
+    width: 100%;
+    background-color: $primary-10;
+    border-radius: 24px;
+    padding: 32px;
+}
+
+.heading-6 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    margin-bottom: 8px;
+}
+
+.alert .heading {
+    color: $primary-850;
+}
+
+.body-2 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 145%;
+    margin: 0px;
+}
+
+.alert .body {
+    color: $neutral-500;
+}
+
+.fa-lightbulb {
+    color: $primary-300;
+    font-size: 32px;
+}
+
+.btn {
+    background-color: $primary-500;
+    color: $neutral-0;
+}
+
+.btn:hover {
+    background-color: $primary-700;
+    color: $neutral-0;
+}
+
+.form-floating label {
+    color: $neutral-300;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
